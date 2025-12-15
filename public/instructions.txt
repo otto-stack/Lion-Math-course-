@@ -1,0 +1,22 @@
+-----------------------------------------------------------------------
+HOW TO ADD YOUR IMAGES
+-----------------------------------------------------------------------
+
+This is the "public" folder. Files placed here are accessible directly by the website.
+
+1.  Drag and drop your image files into this folder.
+2.  Ensure your files are named exactly as follows:
+
+    - image_1.jpg
+    - image_2.jpg
+    - about_academic.jpg
+    - image_3_notes.jpg
+    - ig_showcase.jpg
+    - image_5.jpg
+    - review_1.jpg
+    - review_2.jpg
+    - review_3.jpg
+
+3.  After adding the files here, go to the file "assets.ts" in the main folder.
+    Follow the instructions inside "assets.ts" to switch from the "Online Placeholder" links 
+    to "Your Local File".
