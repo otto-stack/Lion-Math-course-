@@ -1,38 +1,26 @@
-// @ts-nocheck
 // --- IMAGE ASSETS ---
-
-// We import images directly so the build tool (Vite) bundles them correctly
-// regardless of whether they are in a 'public' folder or the root folder.
-
-import LionSirImage from './image_1.jpg';
-import StudentStudyingImage from './image_2.jpg';
-import CertificateImage from './about_academic.jpg';
-import FeatureNotesImage from './image_3_notes.jpg';
-import IgShowcaseImage from './ig_showcase.jpg';
-import ResultImage5 from './image_5.jpg';
-import Review1 from './review_1.jpg';
-import Review2 from './review_2.jpg';
-import Review3 from './review_3.jpg';
+// NOTE: Ensure your image files are placed in the 'public' folder in your project root.
+// Example: /public/image_1.jpg
 
 // Used in Hero and About sections
-export const LION_SIR_IMAGE = LionSirImage;
+export const LION_SIR_IMAGE = "/image_1.jpg";
 
 // Used in PainPoints section
-export const STUDENT_STUDYING_IMAGE = StudentStudyingImage;
+export const STUDENT_STUDYING_IMAGE = "/image_2.jpg";
 
 // Used in About section
-export const CERTIFICATE_IMAGE = CertificateImage;
+export const CERTIFICATE_IMAGE = "/about_academic.jpg";
 
 // Used in Features section
-export const FEATURE_NOTES_IMAGE = FeatureNotesImage;
+export const FEATURE_NOTES_IMAGE = "/image_3_notes.jpg";
 
 // Used in IG Showcase section
-export const IG_SHOWCASE_IMAGE = IgShowcaseImage;
+export const IG_SHOWCASE_IMAGE = "/ig_showcase.jpg";
 
 // Used in Results section
 export const RESULT_IMAGES = [
-    ResultImage5,
-    Review1, 
-    Review2, 
-    Review3, 
+    "/image_5.jpg",
+    "/review_1.jpg", 
+    "/review_2.jpg", 
+    "/review_3.jpg", 
 ];
