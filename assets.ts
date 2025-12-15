@@ -41,10 +41,10 @@ export const IG_SHOWCASE_IMAGE = "/ig_showcase.jpg";
 // --- 6. RESULT IMAGES (Testimonials) ---
 // [Current: Online Placeholders]
 export const RESULT_IMAGES = [
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000",
-    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000",
-    "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000",
-    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000",
+    "/image_5.jpg",
+    "/review_1.jpg", 
+    "/review_2.jpg", 
+    "/review_3.jpg", 
 ];
 // [Switch to this for your photos]:
 /*
