@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
 import { RESULT_IMAGES } from '../assets';
+import ImageWithFallback from './ImageWithFallback';
 
 const Results: React.FC = () => {
     return (
@@ -53,7 +54,7 @@ const Results: React.FC = () => {
                             {RESULT_IMAGES.map((img, i) => (
                                 <ScrollReveal key={i} delay={i * 150} className={`w-full ${i % 2 === 1 ? 'md:translate-y-6' : ''}`}>
                                     <div className="bg-white p-2 rounded-xl transform transition-all duration-300 hover:scale-105 shadow-xl">
-                                        <img 
+                                        <ImageWithFallback 
                                             src={img} 
                                             alt={`Student Review ${i+1}`} 
                                             className="w-full h-48 sm:h-64 md:h-80 object-cover object-top rounded-lg"

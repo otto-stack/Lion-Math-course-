@@ -2,6 +2,7 @@ import React from 'react';
 import { Instagram } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import { IG_SHOWCASE_IMAGE } from '../assets';
+import ImageWithFallback from './ImageWithFallback';
 
 const IGShowcase: React.FC = () => {
     return (
@@ -21,7 +22,7 @@ const IGShowcase: React.FC = () => {
                     <div className="relative max-w-2xl mx-auto mb-10 group">
                         <div className="absolute -inset-1 bg-gradient-to-tr from-[#C5A059] to-[#D4AF37] rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                         <div className="relative">
-                            <img 
+                            <ImageWithFallback 
                                 src={IG_SHOWCASE_IMAGE}
                                 alt="Lion Math Instagram" 
                                 className="rounded-2xl shadow-2xl w-full border border-gray-100"

@@ -3,6 +3,7 @@ import { CheckCircle, Star } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import { ENROLL_LINK } from '../constants';
 import { LION_SIR_IMAGE } from '../assets';
+import ImageWithFallback from './ImageWithFallback';
 
 const Hero: React.FC = () => {
     return (
@@ -78,7 +79,7 @@ const Hero: React.FC = () => {
                             <div className="relative w-4/5 md:w-full aspect-square mx-auto">
                                 <div className="absolute -inset-4 bg-[#C5A059]/20 rounded-full blur-3xl animate-pulse"></div>
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#1A1A1A] md:transform md:rotate-3 hover:rotate-0 transition-transform duration-500 bg-white">
-                                     <img 
+                                     <ImageWithFallback 
                                         src={LION_SIR_IMAGE}
                                         alt="Lion Sir" 
                                         className="w-full h-full object-cover"

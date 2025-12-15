@@ -4,6 +4,7 @@ import ScrollReveal from './ScrollReveal';
 import { WHATSAPP_LINK } from '../constants';
 import { FeatureItem } from '../types';
 import { FEATURE_NOTES_IMAGE } from '../assets';
+import ImageWithFallback from './ImageWithFallback';
 
 const Features: React.FC = () => {
     const featureList: FeatureItem[] = [
@@ -64,7 +65,7 @@ const Features: React.FC = () => {
                                 
                                 {item.hasImage && item.image && (
                                     <div className="mt-auto w-full h-56 md:h-64 rounded-xl overflow-hidden bg-gray-200 shadow-inner">
-                                        <img 
+                                        <ImageWithFallback 
                                             src={item.image} 
                                             alt={item.title} 
                                             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"

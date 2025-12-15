@@ -2,6 +2,7 @@ import React from 'react';
 import { Star } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import { STUDENT_STUDYING_IMAGE } from '../assets';
+import ImageWithFallback from './ImageWithFallback';
 
 const PainPoints: React.FC = () => {
     return (
@@ -11,8 +12,8 @@ const PainPoints: React.FC = () => {
                     <div className="w-full md:w-1/2">
                         <ScrollReveal>
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl group mx-auto max-w-lg md:max-w-none">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
-                                <img 
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 pointer-events-none"></div>
+                                <ImageWithFallback 
                                     src={STUDENT_STUDYING_IMAGE}
                                     alt="Student Studying" 
                                     className="w-full h-64 sm:h-80 md:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
