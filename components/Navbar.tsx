@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { ViewState } from '../types';
@@ -22,23 +23,25 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onChangeView }) => {
 
     const handleNavClick = (id: string) => {
         setIsOpen(false);
-        // Special pages handling
+        
+        // 1. Handling View Switches (Pages)
         if (['brochure', 'comparison', 'materials', 'enrollment'].includes(id)) {
             onChangeView(id as ViewState);
+        } else if (id === 'home') {
+            // 2. Handling Return to Top/Home
+            onChangeView('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
-            // Home page sections handling
+            // 3. Handling Home Page Anchor Sections (About, Features, etc.)
             onChangeView('home');
-            if (id !== 'home') {
-                setTimeout(() => {
-                    const element = document.getElementById(id);
-                    if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }, 100);
-            } else {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+            
+            // Short delay to ensure the Home view is rendered before scrolling to the element
+            setTimeout(() => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
         }
     };
 

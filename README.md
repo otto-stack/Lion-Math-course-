@@ -13,9 +13,10 @@ This is the official website for Lion Math (Lion Sir), built with React, TypeScr
 
 ## 📸 How to Add Your Own Images
 
-1.  **Open the `public` folder**.
-2.  **Drag and drop** your photo files into this folder.
-3.  **Rename your files** to match these names exactly:
+### Step 1: Put images in the folder
+1.  Open the **`public`** folder on your computer.
+2.  Drag and drop your photos here.
+3.  **Rename them** to match these filenames exactly:
     - `image_1.jpg` (Lion Sir Profile Picture)
     - `image_2.jpg` (Student Studying)
     - `about_academic.jpg` (Certificate)
@@ -26,10 +27,39 @@ This is the official website for Lion Math (Lion Sir), built with React, TypeScr
     - `review_2.jpg` (Review Photo 3)
     - `review_3.jpg` (Review Photo 4)
 
-4.  **Update the Code**:
-    - Open `assets.ts`.
-    - Comment out the "Online Placeholder" lines (add `//` at the start).
-    - Uncomment the "Your Local File" lines (remove `//` from the start).
+### Step 2: Update the Code
+1. Open **`assets.ts`**.
+2. Remove the `//` from the lines starting with `export const...` that point to your local files (e.g., `"/image_1.jpg"`).
+3. Add `//` to the lines pointing to the online placeholder links.
+
+---
+
+## ☁️ How to Upload to GitHub (Choose one method)
+
+### Method A: The "No Terminal" Way (Easiest)
+You can use the buttons inside VS Code.
+
+1.  Look at the **Left Sidebar** in VS Code.
+2.  Click the icon that looks like a **Tree Branch** (Source Control).
+    *   *It usually has a blue number badge on it.*
+3.  Type a message in the text box (e.g. "Added images").
+4.  Click the blue **Commit** button.
+5.  Click the **Sync Changes** (or Publish) button.
+
+### Method B: The Website Drag & Drop Way
+1.  Go to your repository on **GitHub.com**.
+2.  Click on the **`public`** folder.
+3.  Click **Add file** (top right) -> **Upload files**.
+4.  Drag your images from your Mac Finder into the browser window.
+5.  Click the green **Commit changes** button.
+
+### Method C: The Terminal Way (Advanced)
+Open Terminal in VS Code (`Ctrl + ~`) and type:
+```bash
+git add .
+git commit -m "Update images"
+git push
+```
 
 ---
 
@@ -45,11 +75,3 @@ If you want to edit the code on your computer:
     npm run dev
     ```
 4.  Open the link shown (usually `http://localhost:5173`).
-
----
-
-## 🌐 Deploying to GitHub Pages
-
-1.  Create a repo on GitHub.
-2.  Push your code.
-3.  Go to Settings -> Pages -> Source: GitHub Actions.

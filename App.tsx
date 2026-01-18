@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -17,9 +18,13 @@ import { ViewState } from './types';
 const App: React.FC = () => {
     const [currentView, setCurrentView] = useState<ViewState>('home');
 
+    // Force scroll to top immediately whenever the view changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [currentView]);
+
     const handleChangeView = (view: ViewState) => {
         setCurrentView(view);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (

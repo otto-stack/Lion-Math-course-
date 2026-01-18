@@ -4,7 +4,7 @@ HOW TO ADD YOUR IMAGES
 
 This is the "public" folder. Files placed here are accessible directly by the website.
 
-1.  Drag and drop your image files into this folder.
+1.  Drag and drop your image files into this folder (using Finder).
 2.  Ensure your files are named exactly as follows:
 
     - image_1.jpg
@@ -17,6 +17,11 @@ This is the "public" folder. Files placed here are accessible directly by the we
     - review_2.jpg
     - review_3.jpg
 
-3.  After adding the files here, go to the file "assets.ts" in the main folder.
-    Follow the instructions inside "assets.ts" to switch from the "Online Placeholder" links 
-    to "Your Local File".
+3.  After adding the files:
+    Go to VS Code -> Click the "Source Control" icon (Left sidebar, looks like a branch) -> Type "added images" -> Click Commit -> Click Sync.
+
+    OR
+
+    Go to GitHub.com -> Navigate to the 'public' folder -> Click "Add file" -> "Upload files" -> Drag these files there.
+
+4.  Finally, update "assets.ts" to point to these new files.
