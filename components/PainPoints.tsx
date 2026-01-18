@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
-import { STUDENT_STUDYING_IMAGE } from '../assets';
+import { STUDENT_STUDYING_IMAGE, PLACEHOLDERS } from '../assets';
 import ImageWithFallback from './ImageWithFallback';
 
 const PainPoints: React.FC = () => {
@@ -15,6 +15,7 @@ const PainPoints: React.FC = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 pointer-events-none"></div>
                                 <ImageWithFallback 
                                     src={STUDENT_STUDYING_IMAGE}
+                                    fallback={PLACEHOLDERS.STUDENT}
                                     alt="Student Studying" 
                                     className="w-full h-64 sm:h-80 md:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />

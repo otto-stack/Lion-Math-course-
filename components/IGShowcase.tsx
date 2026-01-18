@@ -1,7 +1,7 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
-import { IG_SHOWCASE_IMAGE } from '../assets';
+import { IG_SHOWCASE_IMAGE, PLACEHOLDERS } from '../assets';
 import ImageWithFallback from './ImageWithFallback';
 
 const IGShowcase: React.FC = () => {
@@ -24,6 +24,7 @@ const IGShowcase: React.FC = () => {
                         <div className="relative">
                             <ImageWithFallback 
                                 src={IG_SHOWCASE_IMAGE}
+                                fallback={PLACEHOLDERS.IG}
                                 alt="Lion Math Instagram" 
                                 className="rounded-2xl shadow-2xl w-full border border-gray-100"
                             />

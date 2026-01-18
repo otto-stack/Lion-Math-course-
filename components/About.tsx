@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star, CheckCircle, GraduationCap, Award } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
-import { LION_SIR_IMAGE, CERTIFICATE_IMAGE } from '../assets';
+import { LION_SIR_IMAGE, CERTIFICATE_IMAGE, PLACEHOLDERS } from '../assets';
 import ImageWithFallback from './ImageWithFallback';
 
 const About: React.FC = () => {
@@ -24,7 +24,12 @@ const About: React.FC = () => {
                         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
                             <div className="flex items-center mb-6">
                                 <div className="w-16 h-16 rounded-full bg-white p-1 border-2 border-[#C5A059] overflow-hidden mr-4 shadow-lg shrink-0">
-                                    <ImageWithFallback src={LION_SIR_IMAGE} alt="Lion Sir Avatar" className="w-full h-full object-cover" />
+                                    <ImageWithFallback 
+                                        src={LION_SIR_IMAGE} 
+                                        fallback={PLACEHOLDERS.LION_SIR}
+                                        alt="Lion Sir Avatar" 
+                                        className="w-full h-full object-cover" 
+                                    />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-white">Lion Sir</h3>
@@ -84,6 +89,7 @@ const About: React.FC = () => {
                                 <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-black">
                                     <ImageWithFallback 
                                         src={CERTIFICATE_IMAGE}
+                                        fallback={PLACEHOLDERS.CERTIFICATE}
                                         alt="DSE 5** Certificate" 
                                         className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
                                     />

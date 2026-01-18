@@ -2,7 +2,7 @@ import React from 'react';
 import { CheckCircle, Star } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import { ENROLL_LINK } from '../constants';
-import { LION_SIR_IMAGE } from '../assets';
+import { LION_SIR_IMAGE, PLACEHOLDERS } from '../assets';
 import ImageWithFallback from './ImageWithFallback';
 
 const Hero: React.FC = () => {
@@ -81,6 +81,7 @@ const Hero: React.FC = () => {
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#1A1A1A] md:transform md:rotate-3 hover:rotate-0 transition-transform duration-500 bg-white">
                                      <ImageWithFallback 
                                         src={LION_SIR_IMAGE}
+                                        fallback={PLACEHOLDERS.LION_SIR}
                                         alt="Lion Sir" 
                                         className="w-full h-full object-cover"
                                     />

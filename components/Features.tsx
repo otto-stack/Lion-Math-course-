@@ -3,7 +3,7 @@ import { BookOpen, Calculator, MessageCircle, ChevronRight } from 'lucide-react'
 import ScrollReveal from './ScrollReveal';
 import { WHATSAPP_LINK } from '../constants';
 import { FeatureItem } from '../types';
-import { FEATURE_NOTES_IMAGE } from '../assets';
+import { FEATURE_NOTES_IMAGE, PLACEHOLDERS } from '../assets';
 import ImageWithFallback from './ImageWithFallback';
 
 const Features: React.FC = () => {
@@ -67,6 +67,7 @@ const Features: React.FC = () => {
                                     <div className="mt-auto w-full h-56 md:h-64 rounded-xl overflow-hidden bg-gray-200 shadow-inner">
                                         <ImageWithFallback 
                                             src={item.image} 
+                                            fallback={PLACEHOLDERS.NOTES}
                                             alt={item.title} 
                                             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                         />
